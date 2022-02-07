@@ -1,0 +1,32 @@
+@import 'variables';
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*, 
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; // 1rem = 10px
+
+	@media only screen and (max-width: $break-lg){
+		font-size: 50%; // 1rem = 8px
+		// font-size를 바꾸고 나면, rem값이 변화해서 마진이 다시 생겨있음. -> 
+	}
+}
+
+body {
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    background-size: cover;
+    background-repeat: no-repeat;
+	min-height: 100vh;
+	color: $color-grey-dark-2;
+}
+
+ul, li {
+	list-style: none;
+}

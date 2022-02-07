@@ -1,0 +1,89 @@
+.container {
+	max-width: 120rem;
+	margin: 8rem auto;
+	background-color: #fff;
+	// rgba의,0.3앞에 hex값이나 텍스트 컬러도 들어갈 수 있다.
+	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+	min-height: 50rem;
+
+	@media only screen and (max-width: $break-lg){
+		margin:0;
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+.header {
+	font-size: 1.4rem;
+	height: 7rem;
+	background-color: #fff;
+	border-bottom: $line;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media only screen and (max-width: $break-xs){
+		flex-wrap: wrap;	
+		height: 11rem;
+		align-content: space-around;
+		
+	}
+
+}
+
+.content {
+	display: flex;
+	@media only screen and (max-width: $break-sm) {
+		flex-direction: column;
+	}
+}
+
+.sidebar {
+	background-color: $color-grey-dark-1;
+	flex: 0 0 18%;
+	// Navigation bar #3
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.hotel-view {
+	flex: 1 0 auto;
+	// Testing for Side-nav
+	flex: 1;
+}
+
+.detail {
+	font-size: 1.4rem;
+    display: flex;
+	padding: 4.5rem;
+	background-color: $color-grey-light-1;
+	border-bottom: $line;
+	@media only screen and (max-width: $break-md){
+		padding: 3rem;
+		flex-direction: column;
+	}
+
+}
+
+.description {
+	background-color: #fff;
+	box-shadow: $shadow-light;
+	padding: 3rem;
+	flex: 0 0 60%;
+	margin-right: 4.5rem;   
+	@media only screen and (max-width: $break-md){
+		padding: 2rem;
+		margin-right: 3rem;
+	}
+	@media only screen and (max-width: $break-sm){
+		margin-right: 0;
+		margin-bottom: 3rem;
+	}
+}
+
+.user-reviews {
+	// background-color: yellowgreen;
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
