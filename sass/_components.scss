@@ -166,7 +166,7 @@
 		padding: 1.5rem 3rem;
 		display: flex;
 		align-items: center;
-		// z-index는 포지션 있어야 사용가능.
+		
 		position: relative;
 		z-index: 10;
 		@media only screen and (max-width: $break-md) {
@@ -235,7 +235,7 @@
 
 	&__stars {
 		display: flex;
-		// flexbox에서의 trick - margin-right ***
+		
 		// flex:1;
 		margin-right: auto;
 		// background-color: violet;
@@ -276,7 +276,7 @@
 	border: none;
 	color: $color-primary;
 	font-size: inherit;
-	// currentColor : hover시 텍스트에 들어간 색에 맞춰서
+	
 	border-bottom: 1px solid currentColor;
 	display: inline-block;
 	padding-bottom: 2px;
